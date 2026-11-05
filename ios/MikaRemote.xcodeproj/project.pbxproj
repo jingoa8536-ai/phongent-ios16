@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F9DF379048519242813F2 /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79503055E8D5A1E8072414EC /* ModelProvider.swift */; };
+		08A45E662792CAEDD7CEE6DF /* Aora in Resources */ = {isa = PBXBuildFile; fileRef = ACE44436A1761BC59FAEC91E /* Aora */; };
+		0A19A53013BA53B5D24B0840 /* ModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7075A18AD45F4C396BC224 /* ModelCatalog.swift */; };
+		0D2A195BBD3BFE0606DF930D /* ModelChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53E0C769C68B7785DB8754 /* ModelChat.swift */; };
+		0FE9C4D34A4039891FF04D54 /* AoraGeometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DE61D0068078122A26837 /* AoraGeometry.json */; };
+		15CA546B3C9211C9700ED264 /* AoraGeometry.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DE61D0068078122A26837 /* AoraGeometry.json */; };
+		175C25B2AA949FEC5957616B /* MikaWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DCD9039E9A7EB4D389EDF950 /* MikaWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18D3DE3086C4A37D3E46BAAB /* SingleDeviceDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27E76F415EE89A1F429872 /* SingleDeviceDrawer.swift */; };
+		1DD9B3715A0FA36376F275CA /* ModelSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD4B3FD47021AF1922759C /* ModelSettingsView.swift */; };
+		255B7FE57910B1CA600852A3 /* MessageAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7918EFBA91B3E0B7C2E727C /* MessageAlerts.swift */; };
+		33377B962D557534095214E8 /* FleetWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442745202CD128EF72825B07 /* FleetWorkspace.swift */; };
+		52409B6591A772F32A25E30E /* AoraAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319619080CE97739DAE0150 /* AoraAvatar.swift */; };
+		546531FC5A32B0EDE155E328 /* AoraAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319619080CE97739DAE0150 /* AoraAvatar.swift */; };
+		6BC0A7B03537584669586C33 /* NativeChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA8BBAC6053DD19C58DBDC /* NativeChatView.swift */; };
+		72FBC00AD3881AB9C968D1A8 /* SyncSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A812ED575A87AA9EE8F7258D /* SyncSettings.swift */; };
+		73CC266328D439FCA6282E58 /* DeviceConversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1022EF4D9D958124E4E1526 /* DeviceConversations.swift */; };
+		7989341CD578539C934A769A /* MessageInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDECFBA4B5825CE6B924F9 /* MessageInbox.swift */; };
+		7D6A19165160EE4B556344A3 /* AoraAnimatedAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107AC9455B4BF948D2C77E7 /* AoraAnimatedAvatar.swift */; };
+		7E521367D89261E3C8DD877D /* KnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0638AD8500E3154E0D81B14 /* KnowledgeView.swift */; };
+		942B9787B7AA684B9B417BF5 /* AgentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825F59A794D144045BB4E076 /* AgentEvent.swift */; };
+		A478F9577C019BB0E91C32DD /* RemoteVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995B853E002A50B91779B5C /* RemoteVideo.swift */; };
+		B9F6927F037A401662E4756B /* AgentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ED87B67B36BCEEDCFD0AE /* AgentState.swift */; };
+		BB1A1B9D48CFAA916B460F69 /* DeviceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD615A35FB92273EE56A278A /* DeviceChat.swift */; };
+		CC273118EFF9BB8551121CC9 /* NearbyHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6864C0C5BF38BB5A2A64684A /* NearbyHub.swift */; };
+		D02D63F15CA880F49C0F46E6 /* ModelAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7222E24853D73B12435F5FD /* ModelAccount.swift */; };
+		D21DE65305C64CDA44D522E9 /* DeviceWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA543DCBC7EF4406481DB7 /* DeviceWorkspace.swift */; };
+		D79C6EB890B628B13FFA936C /* MessageGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C6CBF058F8EA1407F6613 /* MessageGrouping.swift */; };
+		D8C1C8C390961A82C8C68149 /* AgentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8ED87B67B36BCEEDCFD0AE /* AgentState.swift */; };
+		E00EA2E12AEFF69E4DF2ECD1 /* MikaWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783985BB09C360D62F5B0DA5 /* MikaWidgets.swift */; };
+		E3965EA1B0C02420A3F8FB1C /* NearbyRadar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE4F48D6B808B9B5B56C83 /* NearbyRadar.swift */; };
+		E74E6B074C2D37DD7627E006 /* ModelWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B854931928AE1E02B7C72D7 /* ModelWire.swift */; };
+		E8F61B058F5E3894017F1E5C /* MikaRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA726A8CFC1EF122BF8A3FB /* MikaRemoteApp.swift */; };
+		F12C7BD651CAE9CBEC135D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E952A27BA8705A1859BB024F /* Assets.xcassets */; };
+		F374FFDB3ED5C23EC52AF8A5 /* DeviceChatHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC09B993EB0DB925BA0E7 /* DeviceChatHistory.swift */; };
+		F575B31A7870659C1436E321 /* BridgeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAEFD9626B7638F37AA4BD0 /* BridgeClient.swift */; };
+		FC51AEE53903035D63EA23AB /* FleetChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479FF2130457FEC6D5C79F91 /* FleetChatStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8070F15941E39FD89D47112F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C6A93A42C1F16139F31C7BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C84B2B292E6E9BEEB8C593;
+			remoteInfo = MikaWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		032CF6B3194FDAC8061F04C5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				175C25B2AA949FEC5957616B /* MikaWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0107AC9455B4BF948D2C77E7 /* AoraAnimatedAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AoraAnimatedAvatar.swift; sourceTree = "<group>"; };
+		06AE4F48D6B808B9B5B56C83 /* NearbyRadar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRadar.swift; sourceTree = "<group>"; };
+		0A5DE61D0068078122A26837 /* AoraGeometry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AoraGeometry.json; sourceTree = "<group>"; };
+		0C5C949880A1E64C2C3177F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DA726A8CFC1EF122BF8A3FB /* MikaRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikaRemoteApp.swift; sourceTree = "<group>"; };
+		0E27E76F415EE89A1F429872 /* SingleDeviceDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDeviceDrawer.swift; sourceTree = "<group>"; };
+		0F80BC0D05F32585E74BDC1F /* MikaRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MikaRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECDECFBA4B5825CE6B924F9 /* MessageInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInbox.swift; sourceTree = "<group>"; };
+		25DD4B3FD47021AF1922759C /* ModelSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSettingsView.swift; sourceTree = "<group>"; };
+		2A53E0C769C68B7785DB8754 /* ModelChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelChat.swift; sourceTree = "<group>"; };
+		2E64412777187FFECDBEF058 /* Mika.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mika.entitlements; sourceTree = "<group>"; };
+		3319619080CE97739DAE0150 /* AoraAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AoraAvatar.swift; sourceTree = "<group>"; };
+		442745202CD128EF72825B07 /* FleetWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetWorkspace.swift; sourceTree = "<group>"; };
+		479FF2130457FEC6D5C79F91 /* FleetChatStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetChatStore.swift; sourceTree = "<group>"; };
+		4995B853E002A50B91779B5C /* RemoteVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideo.swift; sourceTree = "<group>"; };
+		5A7075A18AD45F4C396BC224 /* ModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCatalog.swift; sourceTree = "<group>"; };
+		5F8ED87B67B36BCEEDCFD0AE /* AgentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentState.swift; sourceTree = "<group>"; };
+		6864C0C5BF38BB5A2A64684A /* NearbyHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyHub.swift; sourceTree = "<group>"; };
+		783985BB09C360D62F5B0DA5 /* MikaWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikaWidgets.swift; sourceTree = "<group>"; };
+		79503055E8D5A1E8072414EC /* ModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvider.swift; sourceTree = "<group>"; };
+		825F59A794D144045BB4E076 /* AgentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEvent.swift; sourceTree = "<group>"; };
+		85DA543DCBC7EF4406481DB7 /* DeviceWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceWorkspace.swift; sourceTree = "<group>"; };
+		8B854931928AE1E02B7C72D7 /* ModelWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelWire.swift; sourceTree = "<group>"; };
+		A7918EFBA91B3E0B7C2E727C /* MessageAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlerts.swift; sourceTree = "<group>"; };
+		A812ED575A87AA9EE8F7258D /* SyncSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncSettings.swift; sourceTree = "<group>"; };
+		A86C6CBF058F8EA1407F6613 /* MessageGrouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageGrouping.swift; sourceTree = "<group>"; };
+		ACE44436A1761BC59FAEC91E /* Aora */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Aora; path = App/Resources/Aora; sourceTree = SOURCE_ROOT; };
+		AD615A35FB92273EE56A278A /* DeviceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceChat.swift; sourceTree = "<group>"; };
+		C1022EF4D9D958124E4E1526 /* DeviceConversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConversations.swift; sourceTree = "<group>"; };
+		C2A8B7DC47FDB9AE5EEC2CEC /* Mika.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mika.entitlements; sourceTree = "<group>"; };
+		C7222E24853D73B12435F5FD /* ModelAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAccount.swift; sourceTree = "<group>"; };
+		CB97A47E4A1B2F2FF0A76891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CC5BC09B993EB0DB925BA0E7 /* DeviceChatHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceChatHistory.swift; sourceTree = "<group>"; };
+		D0DA8BBAC6053DD19C58DBDC /* NativeChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeChatView.swift; sourceTree = "<group>"; };
+		DCD9039E9A7EB4D389EDF950 /* MikaWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MikaWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0638AD8500E3154E0D81B14 /* KnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeView.swift; sourceTree = "<group>"; };
+		E952A27BA8705A1859BB024F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAAEFD9626B7638F37AA4BD0 /* BridgeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2521AD4E0E45624304A6C4B6 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C949880A1E64C2C3177F2 /* Info.plist */,
+				2E64412777187FFECDBEF058 /* Mika.entitlements */,
+				783985BB09C360D62F5B0DA5 /* MikaWidgets.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		26C6591464CA2752A91F5AB3 = {
+			isa = PBXGroup;
+			children = (
+				ACE44436A1761BC59FAEC91E /* Aora */,
+				2E0FB391910CFB2EE85D8358 /* App */,
+				7ECF4F8DDE5FC83FB2289EC3 /* Shared */,
+				2521AD4E0E45624304A6C4B6 /* Widgets */,
+				C77FC331E02445FA3B8B056D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E0FB391910CFB2EE85D8358 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				825F59A794D144045BB4E076 /* AgentEvent.swift */,
+				0107AC9455B4BF948D2C77E7 /* AoraAnimatedAvatar.swift */,
+				E952A27BA8705A1859BB024F /* Assets.xcassets */,
+				FAAEFD9626B7638F37AA4BD0 /* BridgeClient.swift */,
+				AD615A35FB92273EE56A278A /* DeviceChat.swift */,
+				CC5BC09B993EB0DB925BA0E7 /* DeviceChatHistory.swift */,
+				C1022EF4D9D958124E4E1526 /* DeviceConversations.swift */,
+				85DA543DCBC7EF4406481DB7 /* DeviceWorkspace.swift */,
+				479FF2130457FEC6D5C79F91 /* FleetChatStore.swift */,
+				442745202CD128EF72825B07 /* FleetWorkspace.swift */,
+				CB97A47E4A1B2F2FF0A76891 /* Info.plist */,
+				E0638AD8500E3154E0D81B14 /* KnowledgeView.swift */,
+				A7918EFBA91B3E0B7C2E727C /* MessageAlerts.swift */,
+				A86C6CBF058F8EA1407F6613 /* MessageGrouping.swift */,
+				1ECDECFBA4B5825CE6B924F9 /* MessageInbox.swift */,
+				C2A8B7DC47FDB9AE5EEC2CEC /* Mika.entitlements */,
+				0DA726A8CFC1EF122BF8A3FB /* MikaRemoteApp.swift */,
+				C7222E24853D73B12435F5FD /* ModelAccount.swift */,
+				5A7075A18AD45F4C396BC224 /* ModelCatalog.swift */,
+				2A53E0C769C68B7785DB8754 /* ModelChat.swift */,
+				79503055E8D5A1E8072414EC /* ModelProvider.swift */,
+				25DD4B3FD47021AF1922759C /* ModelSettingsView.swift */,
+				8B854931928AE1E02B7C72D7 /* ModelWire.swift */,
+				D0DA8BBAC6053DD19C58DBDC /* NativeChatView.swift */,
+				6864C0C5BF38BB5A2A64684A /* NearbyHub.swift */,
+				06AE4F48D6B808B9B5B56C83 /* NearbyRadar.swift */,
+				4995B853E002A50B91779B5C /* RemoteVideo.swift */,
+				0E27E76F415EE89A1F429872 /* SingleDeviceDrawer.swift */,
+				A812ED575A87AA9EE8F7258D /* SyncSettings.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7ECF4F8DDE5FC83FB2289EC3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5F8ED87B67B36BCEEDCFD0AE /* AgentState.swift */,
+				3319619080CE97739DAE0150 /* AoraAvatar.swift */,
+				0A5DE61D0068078122A26837 /* AoraGeometry.json */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C77FC331E02445FA3B8B056D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F80BC0D05F32585E74BDC1F /* MikaRemote.app */,
+				DCD9039E9A7EB4D389EDF950 /* MikaWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21E8BE0585852EFF55849A4B /* MikaRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4BAF84663F3542C4163FF9 /* Build configuration list for PBXNativeTarget "MikaRemote" */;
+			buildPhases = (
+				982083D1F8DB599A27E86CF1 /* Sources */,
+				E288FD0EF7792EC13089B601 /* Resources */,
+				032CF6B3194FDAC8061F04C5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CB88DD5B238A2C22A3E0218 /* PBXTargetDependency */,
+			);
+			name = MikaRemote;
+			packageProductDependencies = (
+			);
+			productName = MikaRemote;
+			productReference = 0F80BC0D05F32585E74BDC1F /* MikaRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58C84B2B292E6E9BEEB8C593 /* MikaWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE2BE02B5DDFEA64F54089E3 /* Build configuration list for PBXNativeTarget "MikaWidgets" */;
+			buildPhases = (
+				AF70C8CC0DF0A3FEF634640A /* Sources */,
+				08CCA6D1689B9CB6950234C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MikaWidgets;
+			packageProductDependencies = (
+			);
+			productName = MikaWidgets;
+			productReference = DCD9039E9A7EB4D389EDF950 /* MikaWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C6A93A42C1F16139F31C7BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					21E8BE0585852EFF55849A4B = {
+						DevelopmentTeam = Y726TUG6G3;
+						ProvisioningStyle = Automatic;
+					};
+					58C84B2B292E6E9BEEB8C593 = {
+						DevelopmentTeam = Y726TUG6G3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9BE8F852BAB3BF3961FD401A /* Build configuration list for PBXProject "MikaRemote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 26C6591464CA2752A91F5AB3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C77FC331E02445FA3B8B056D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21E8BE0585852EFF55849A4B /* MikaRemote */,
+				58C84B2B292E6E9BEEB8C593 /* MikaWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08CCA6D1689B9CB6950234C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CA546B3C9211C9700ED264 /* AoraGeometry.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288FD0EF7792EC13089B601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A45E662792CAEDD7CEE6DF /* Aora in Resources */,
+				0FE9C4D34A4039891FF04D54 /* AoraGeometry.json in Resources */,
+				F12C7BD651CAE9CBEC135D12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		982083D1F8DB599A27E86CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942B9787B7AA684B9B417BF5 /* AgentEvent.swift in Sources */,
+				B9F6927F037A401662E4756B /* AgentState.swift in Sources */,
+				7D6A19165160EE4B556344A3 /* AoraAnimatedAvatar.swift in Sources */,
+				546531FC5A32B0EDE155E328 /* AoraAvatar.swift in Sources */,
+				F575B31A7870659C1436E321 /* BridgeClient.swift in Sources */,
+				BB1A1B9D48CFAA916B460F69 /* DeviceChat.swift in Sources */,
+				F374FFDB3ED5C23EC52AF8A5 /* DeviceChatHistory.swift in Sources */,
+				73CC266328D439FCA6282E58 /* DeviceConversations.swift in Sources */,
+				D21DE65305C64CDA44D522E9 /* DeviceWorkspace.swift in Sources */,
+				FC51AEE53903035D63EA23AB /* FleetChatStore.swift in Sources */,
+				33377B962D557534095214E8 /* FleetWorkspace.swift in Sources */,
+				7E521367D89261E3C8DD877D /* KnowledgeView.swift in Sources */,
+				255B7FE57910B1CA600852A3 /* MessageAlerts.swift in Sources */,
+				D79C6EB890B628B13FFA936C /* MessageGrouping.swift in Sources */,
+				7989341CD578539C934A769A /* MessageInbox.swift in Sources */,
+				E8F61B058F5E3894017F1E5C /* MikaRemoteApp.swift in Sources */,
+				D02D63F15CA880F49C0F46E6 /* ModelAccount.swift in Sources */,
+				0A19A53013BA53B5D24B0840 /* ModelCatalog.swift in Sources */,
+				0D2A195BBD3BFE0606DF930D /* ModelChat.swift in Sources */,
+				002F9DF379048519242813F2 /* ModelProvider.swift in Sources */,
+				1DD9B3715A0FA36376F275CA /* ModelSettingsView.swift in Sources */,
+				E74E6B074C2D37DD7627E006 /* ModelWire.swift in Sources */,
+				6BC0A7B03537584669586C33 /* NativeChatView.swift in Sources */,
+				CC273118EFF9BB8551121CC9 /* NearbyHub.swift in Sources */,
+				E3965EA1B0C02420A3F8FB1C /* NearbyRadar.swift in Sources */,
+				A478F9577C019BB0E91C32DD /* RemoteVideo.swift in Sources */,
+				18D3DE3086C4A37D3E46BAAB /* SingleDeviceDrawer.swift in Sources */,
+				72FBC00AD3881AB9C968D1A8 /* SyncSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF70C8CC0DF0A3FEF634640A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C1C8C390961A82C8C68149 /* AgentState.swift in Sources */,
+				52409B6591A772F32A25E30E /* AoraAvatar.swift in Sources */,
+				E00EA2E12AEFF69E4DF2ECD1 /* MikaWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CB88DD5B238A2C22A3E0218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58C84B2B292E6E9BEEB8C593 /* MikaWidgets */;
+			targetProxy = 8070F15941E39FD89D47112F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63B5CBF0DE3E3E1ECC927C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widgets/Mika.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassen.mikaremote.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		681110D2A7A1E41EE1387425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		873BBB4255D4AE33C280AF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Mika.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassen.mikaremote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B18F8DC11A7582E5C223134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Mika.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassen.mikaremote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93B53AB974567F0A1E7CE8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E904349110BADC35822348C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Widgets/Mika.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kassen.mikaremote.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A4BAF84663F3542C4163FF9 /* Build configuration list for PBXNativeTarget "MikaRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873BBB4255D4AE33C280AF91 /* Debug */,
+				8B18F8DC11A7582E5C223134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BE8F852BAB3BF3961FD401A /* Build configuration list for PBXProject "MikaRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B53AB974567F0A1E7CE8F5 /* Debug */,
+				681110D2A7A1E41EE1387425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE2BE02B5DDFEA64F54089E3 /* Build configuration list for PBXNativeTarget "MikaWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B5CBF0DE3E3E1ECC927C7E /* Debug */,
+				E904349110BADC35822348C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C6A93A42C1F16139F31C7BB /* Project object */;
+}

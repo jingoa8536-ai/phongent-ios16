@@ -1,0 +1,62 @@
+name: MikaRemote
+options:
+  bundleIdPrefix: com.kassen.mikaremote
+  deploymentTarget:
+    iOS: '16.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGN_STYLE: Manual
+    TARGETED_DEVICE_FAMILY: '1'
+targets:
+  MikaRemote:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes: [Resources]
+      - path: Shared
+      - path: App/Resources/Aora
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: MikaWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kassen.mikaremote
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: phongent
+        UILaunchScreen: {}
+        NSSupportsLiveActivities: true
+        NSLocalNetworkUsageDescription: 发现并连接附近的安卓 agent。
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSBonjourServices: [_mika-agent._tcp, _mika-hub._tcp]
+        CFBundleURLTypes:
+          - CFBundleURLSchemes: [mikaremote, agentauth]
+    entitlements:
+      path: App/Mika.entitlements
+      properties:
+        aps-environment: development
+        com.apple.security.application-groups: [group.com.kassen.mikaremote]
+  MikaWidgets:
+    type: app-extension
+    platform: iOS
+    sources: [Widgets, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kassen.mikaremote.widgets
+        APPLICATION_EXTENSION_API_ONLY: true
+        SKIP_INSTALL: true
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: phongent 状态
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widgets/Mika.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.kassen.mikaremote]
