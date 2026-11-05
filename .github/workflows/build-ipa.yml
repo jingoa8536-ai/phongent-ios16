@@ -29,7 +29,7 @@ jobs:
             -target MikaRemote \
             -configuration Release \
             -sdk iphoneos \
-            -derivedDataPath build \
+            SYMROOT="$PWD/build" \
             IPHONEOS_DEPLOYMENT_TARGET=16.0 \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
@@ -39,10 +39,13 @@ jobs:
       - name: Stage Payload
         run: |
           set -euo pipefail
+          APP=$(find ios/build -type d -name 'MikaRemote.app' -print -quit || true)
+          test -n "$APP" || { echo "未找到 MikaRemote.app"; exit 1; }
+          echo "app: $APP"
           mkdir -p Payload
-          cp -R ios/build/Build/Products/Release-iphoneos/MikaRemote.app Payload/
+          cp -R "$APP" Payload/
           /usr/libexec/PlistBuddy -c "Print :MinimumOSVersion" Payload/MikaRemote.app/Info.plist
-          find Payload -maxdepth 3 -name '*.appex' -print
+          find Payload/MikaRemote.app -maxdepth 3 -name '*.appex' -print
 
       # 打一个 adhoc 签名把 App Group entitlement 写进二进制，
       # 让 TrollStore 安装后 Widget 仍能读取共享数据；失败不阻塞交付。
